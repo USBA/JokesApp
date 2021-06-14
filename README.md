@@ -1,5 +1,9 @@
 # JokesApp
-Fetch JSON data from [Official Joke API](https://github.com/15Dkatz/official_joke_api) using async/await on SwiftUI
+Fetch JSON data from [Official Joke API](https://github.com/15Dkatz/official_joke_api) using async/await on SwiftUI.
+
+This is a simple jokes generating app to easily understand async/await which introduced with Swift 5.5.
+
+<br>
 
 **Requirements:**
 * Xcode 13
