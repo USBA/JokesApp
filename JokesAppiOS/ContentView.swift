@@ -40,12 +40,16 @@ struct ContentView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                } else {
+                } else if jokeVM.hasError {
                     Text("ERROR")
                         .font(.system(.title, design: .rounded))
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
+                } else {
+                    Image(systemName: "ellipsis")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
                 }
                 
                 Spacer()

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9F605A2680D6E900B9B54F /* JokesAppForWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A9F60592680D6E900B9B54F /* JokesAppForWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A9F605F2680D6EA00B9B54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F605E2680D6EA00B9B54F /* Assets.xcassets */; };
+		0A9F60652680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A9F60642680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A9F606C2680D6EA00B9B54F /* JokesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F606B2680D6EA00B9B54F /* JokesAppApp.swift */; };
+		0A9F606E2680D6EA00B9B54F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F606D2680D6EA00B9B54F /* ComplicationController.swift */; };
+		0A9F60702680D6EC00B9B54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F606F2680D6EC00B9B54F /* Assets.xcassets */; };
+		0A9F60732680D6EC00B9B54F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F60722680D6EC00B9B54F /* Preview Assets.xcassets */; };
+		0A9F60832680D75100B9B54F /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC32E4D267797AC0096346C /* Joke.swift */; };
+		0A9F60842680D75100B9B54F /* JokeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC32E4F267798070096346C /* JokeVM.swift */; };
+		0A9F60882680DAC700B9B54F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F60692680D6EA00B9B54F /* ContentView.swift */; };
 		0AC32E3D267793840096346C /* JokesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC32E3C267793840096346C /* JokesAppApp.swift */; };
 		0AC32E3F267793840096346C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC32E3E267793840096346C /* ContentView.swift */; };
 		0AC32E41267793850096346C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC32E40267793850096346C /* Assets.xcassets */; };
@@ -15,7 +25,59 @@
 		0AC32E50267798070096346C /* JokeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC32E4F267798070096346C /* JokeVM.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A9F605B2680D6E900B9B54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC32E31267793840096346C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9F60582680D6E900B9B54F;
+			remoteInfo = "JokesAppForWatch WatchKit App";
+		};
+		0A9F60662680D6EA00B9B54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC32E31267793840096346C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9F60632680D6EA00B9B54F;
+			remoteInfo = "JokesAppForWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A9F60772680D6EC00B9B54F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A9F605A2680D6E900B9B54F /* JokesAppForWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9F607A2680D6EC00B9B54F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A9F60652680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A9F60562680D6E800B9B54F /* JokesAppForWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokesAppForWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9F60592680D6E900B9B54F /* JokesAppForWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JokesAppForWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9F605E2680D6EA00B9B54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A9F60642680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JokesAppForWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9F60692680D6EA00B9B54F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A9F606B2680D6EA00B9B54F /* JokesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesAppApp.swift; sourceTree = "<group>"; };
+		0A9F606D2680D6EA00B9B54F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0A9F606F2680D6EC00B9B54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A9F60722680D6EC00B9B54F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A9F60742680D6EC00B9B54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC32E39267793840096346C /* JokesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC32E3C267793840096346C /* JokesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesAppApp.swift; sourceTree = "<group>"; };
 		0AC32E3E267793840096346C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A9F60612680D6EA00B9B54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AC32E36267793840096346C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +105,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9F605D2680D6E900B9B54F /* JokesAppForWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F605E2680D6EA00B9B54F /* Assets.xcassets */,
+			);
+			path = "JokesAppForWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		0A9F60682680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F606D2680D6EA00B9B54F /* ComplicationController.swift */,
+				0A9F606B2680D6EA00B9B54F /* JokesAppApp.swift */,
+				0A9F60692680D6EA00B9B54F /* ContentView.swift */,
+				0A9F606F2680D6EC00B9B54F /* Assets.xcassets */,
+				0A9F60742680D6EC00B9B54F /* Info.plist */,
+				0A9F60712680D6EC00B9B54F /* Preview Content */,
+			);
+			path = "JokesAppForWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0A9F60712680D6EC00B9B54F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F60722680D6EC00B9B54F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A9F60892680E01A00B9B54F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0AC32E4B267797860096346C /* Models */,
+				0AC32E4C2677978F0096346C /* ViewModels */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		0AC32E30267793840096346C = {
 			isa = PBXGroup;
 			children = (
-				0AC32E3B267793840096346C /* JokesApp */,
+				0A9F60892680E01A00B9B54F /* Shared */,
+				0AC32E3B267793840096346C /* JokesAppiOS */,
+				0A9F605D2680D6E900B9B54F /* JokesAppForWatch WatchKit App */,
+				0A9F60682680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension */,
 				0AC32E3A267793840096346C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,21 +158,22 @@
 			isa = PBXGroup;
 			children = (
 				0AC32E39267793840096346C /* JokesApp.app */,
+				0A9F60562680D6E800B9B54F /* JokesAppForWatch.app */,
+				0A9F60592680D6E900B9B54F /* JokesAppForWatch WatchKit App.app */,
+				0A9F60642680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AC32E3B267793840096346C /* JokesApp */ = {
+		0AC32E3B267793840096346C /* JokesAppiOS */ = {
 			isa = PBXGroup;
 			children = (
 				0AC32E3C267793840096346C /* JokesAppApp.swift */,
-				0AC32E4B267797860096346C /* Models */,
-				0AC32E4C2677978F0096346C /* ViewModels */,
-				0AC32E4A2677939C0096346C /* Views */,
+				0AC32E3E267793840096346C /* ContentView.swift */,
 				0AC32E40267793850096346C /* Assets.xcassets */,
 				0AC32E42267793850096346C /* Preview Content */,
 			);
-			path = JokesApp;
+			path = JokesAppiOS;
 			sourceTree = "<group>";
 		};
 		0AC32E42267793850096346C /* Preview Content */ = {
@@ -71,14 +182,6 @@
 				0AC32E43267793850096346C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0AC32E4A2677939C0096346C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				0AC32E3E267793840096346C /* ContentView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		0AC32E4B267797860096346C /* Models */ = {
@@ -100,6 +203,57 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A9F60552680D6E800B9B54F /* JokesAppForWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9F607F2680D6EC00B9B54F /* Build configuration list for PBXNativeTarget "JokesAppForWatch" */;
+			buildPhases = (
+				0A9F60542680D6E800B9B54F /* Resources */,
+				0A9F60772680D6EC00B9B54F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A9F605C2680D6E900B9B54F /* PBXTargetDependency */,
+			);
+			name = JokesAppForWatch;
+			productName = JokesAppForWatch;
+			productReference = 0A9F60562680D6E800B9B54F /* JokesAppForWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		0A9F60582680D6E900B9B54F /* JokesAppForWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9F607E2680D6EC00B9B54F /* Build configuration list for PBXNativeTarget "JokesAppForWatch WatchKit App" */;
+			buildPhases = (
+				0A9F60572680D6E900B9B54F /* Resources */,
+				0A9F607A2680D6EC00B9B54F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A9F60672680D6EA00B9B54F /* PBXTargetDependency */,
+			);
+			name = "JokesAppForWatch WatchKit App";
+			productName = "JokesAppForWatch WatchKit App";
+			productReference = 0A9F60592680D6E900B9B54F /* JokesAppForWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0A9F60632680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9F607D2680D6EC00B9B54F /* Build configuration list for PBXNativeTarget "JokesAppForWatch WatchKit Extension" */;
+			buildPhases = (
+				0A9F60602680D6EA00B9B54F /* Sources */,
+				0A9F60612680D6EA00B9B54F /* Frameworks */,
+				0A9F60622680D6EA00B9B54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JokesAppForWatch WatchKit Extension";
+			productName = "JokesAppForWatch WatchKit Extension";
+			productReference = 0A9F60642680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		0AC32E38267793840096346C /* JokesApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC32E47267793850096346C /* Build configuration list for PBXNativeTarget "JokesApp" */;
@@ -127,6 +281,15 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					0A9F60552680D6E800B9B54F = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0A9F60582680D6E900B9B54F = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0A9F60632680D6EA00B9B54F = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					0AC32E38267793840096346C = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -146,11 +309,38 @@
 			projectRoot = "";
 			targets = (
 				0AC32E38267793840096346C /* JokesApp */,
+				0A9F60552680D6E800B9B54F /* JokesAppForWatch */,
+				0A9F60582680D6E900B9B54F /* JokesAppForWatch WatchKit App */,
+				0A9F60632680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A9F60542680D6E800B9B54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9F60572680D6E900B9B54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9F605F2680D6EA00B9B54F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9F60622680D6EA00B9B54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9F60732680D6EC00B9B54F /* Preview Assets.xcassets in Resources */,
+				0A9F60702680D6EC00B9B54F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AC32E37267793840096346C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +353,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A9F60602680D6EA00B9B54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9F606C2680D6EA00B9B54F /* JokesAppApp.swift in Sources */,
+				0A9F60882680DAC700B9B54F /* ContentView.swift in Sources */,
+				0A9F606E2680D6EA00B9B54F /* ComplicationController.swift in Sources */,
+				0A9F60832680D75100B9B54F /* Joke.swift in Sources */,
+				0A9F60842680D75100B9B54F /* JokeVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AC32E35267793840096346C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,7 +378,160 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0A9F605C2680D6E900B9B54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9F60582680D6E900B9B54F /* JokesAppForWatch WatchKit App */;
+			targetProxy = 0A9F605B2680D6E900B9B54F /* PBXContainerItemProxy */;
+		};
+		0A9F60672680D6EA00B9B54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9F60632680D6EA00B9B54F /* JokesAppForWatch WatchKit Extension */;
+			targetProxy = 0A9F60662680D6EA00B9B54F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0A9F60752680D6EC00B9B54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.JokesAppForWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A9F60762680D6EC00B9B54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.JokesAppForWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0A9F60782680D6EC00B9B54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = JokesAppForWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "JokesAppForWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.JokesAppForWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A9F60792680D6EC00B9B54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = JokesAppForWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "JokesAppForWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.JokesAppForWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0A9F607B2680D6EC00B9B54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JokesAppForWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JokesAppForWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JokesAppForWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.JokesAppForWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A9F607C2680D6EC00B9B54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JokesAppForWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JokesAppForWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JokesAppForWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.JokesAppForWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 		0AC32E45267793850096346C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -300,7 +655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JokesApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"JokesAppiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -330,7 +685,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JokesApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"JokesAppiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -356,6 +711,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A9F607D2680D6EC00B9B54F /* Build configuration list for PBXNativeTarget "JokesAppForWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9F607B2680D6EC00B9B54F /* Debug */,
+				0A9F607C2680D6EC00B9B54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9F607E2680D6EC00B9B54F /* Build configuration list for PBXNativeTarget "JokesAppForWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9F60782680D6EC00B9B54F /* Debug */,
+				0A9F60792680D6EC00B9B54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9F607F2680D6EC00B9B54F /* Build configuration list for PBXNativeTarget "JokesAppForWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9F60752680D6EC00B9B54F /* Debug */,
+				0A9F60762680D6EC00B9B54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0AC32E34267793840096346C /* Build configuration list for PBXProject "JokesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,7 +14,6 @@ class JokeVM: ObservableObject {
     func grabAJoke() async {
         guard let url = URL(string: "https://official-joke-api.appspot.com/random_joke") else {
             hasError = true
-            errorHaptic()
             return
         }
         
@@ -25,20 +24,8 @@ class JokeVM: ObservableObject {
             hasError = false
         } catch {
             hasError = true
-            errorHaptic()
             print(error)
         }
         
     }
-    
-    
-    // MARK: - Haptic feedback for errors
-    let generator = UINotificationFeedbackGenerator()
-    
-    func errorHaptic() {
-        DispatchQueue.main.async {
-            self.generator.notificationOccurred(.error)
-        }
-    }
-    
 }
